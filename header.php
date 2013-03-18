@@ -37,8 +37,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,900|Fenix|Libre+Baskerville:400,700,400italic|Open+Sans:300italic,400,800,600,300|Quando' rel='stylesheet' type='text/css'>
-
+<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville|Tangerine|Open+Sans|Quando' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 

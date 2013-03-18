@@ -114,18 +114,24 @@ body.custom-background {
 }
 
 /* Headings */
-h1, h2, h3 {
-	font-size:28px;
-	font-family: 'Libre Baskerville', serif;
+h1 {
+	font-size:50px;
+	font-family: 'Tangerine', cursive;
 	color: #000;
 	text-rendering: optimizelegibility;
 	font-weight:normal;
+	padding-bottom: 1rem;
 }
-h2{font-size:.9rem}
-h3{font-size:.7rem}
-h4{font-size:.5rem; clear:both;}
-h5{font-size:.4rem; clear: both;}
-h6{font-size:.3rem; clear: both;}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Sans Serif', sans-serif;
+	padding-bottom:.7rem;
+}
+h2{font-size: 2.5rem;}
+h3{font-size: 2.3rem;}
+h4{font-size: 2.1rem; clear:both;}
+h5{font-size: 1.9rem; clear: both;;}
+h6{font-size: 1.7rem; clear: both;}
 
 hr {
 	background-color: #ccc;
@@ -404,6 +410,7 @@ a:hover{color:#9A927D;}
 
 
 #main .widget-area {
+	padding-top: 20px;
 	float: right;
 	overflow: hidden;
 	width: 20%;
@@ -494,7 +501,7 @@ h1.site-title {
 ----------------------------------------------- */
 
 .main-navigation {
-	font-family:'Quando', serif;
+	font-family: 'Tangerine', cursive;
 	/*padding: 5px;*/
 	display: block;
 	float: left;
@@ -504,7 +511,7 @@ h1.site-title {
 	-moz-box-shadow: 0 2px 6px rgba( 100, 100, 100, .3);
 	-webkit-box-shadow: 0 2px 6px rgba( 100, 100, 100, .3);
 		box-shadow: 0 2px 6px rgba( 100, 100, 100, .3);
-	font-size:15px;
+	font-size:30px;
 	margin: 5px 0;
 	background-color: #FFF;
 
@@ -520,8 +527,8 @@ h1.site-title {
 }
 .main-navigation a {
 	display: block;
-	line-height: 2em;
-	padding: 0 1em;
+	line-height: 1.2em;
+	padding: 0 0.8em;
 	text-decoration: none;
 	color:#999;
 	border-bottom:4px solid #fff;
@@ -968,7 +975,7 @@ object {
 .widget-title{
 	font-size:12px; 
 	text-transform:uppercase; 
-	font-family:"Lusitana", georgia, helvetica, arial; 
+	font-family:'Quando', serif;
 	font-weight:normal; 
 	color:#333; 
 	margin:0 0 8px 0;
