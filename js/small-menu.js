@@ -33,7 +33,39 @@ jQuery( document ).ready( function( $ ) {
 				$masthead.find( '.site-navigation' ).removeClass( 'main-small-navigation' ).addClass( 'main-navigation' );
 				$masthead.find( '.site-navigation h1' ).removeClass( 'menu-toggle' ).addClass( 'assistive-text' );
 				$masthead.find( '.menu' ).removeAttr( 'style' );
+				$('#bannerlogo').show();
 			}
 		}, 200 );
 	} );
+	
+	// fix navigation to top of page if scroll below a certain point
+	var nav = $('.main-navigation');
+	var navToggled = $('menu-toggle');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+        	$('#bannerlogo').hide();
+            nav.css({
+                position: 'fixed',
+                top: 0,
+                left: nav.offset().left,
+                width: nav.width()
+            });
+            isFixed = true;
+        }
+        else if (!shouldBeFixed && isFixed)
+        {
+            nav.css({
+                position: 'static'
+            });
+            isFixed = false;
+        }
+    });
+
+
+
 } );

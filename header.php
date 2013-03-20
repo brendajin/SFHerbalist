@@ -63,6 +63,7 @@
 				<h1 class="assistive-text"><?php _e( 'Menu', 'SFHerbalist' ); ?></h1>
 				<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'SFHerbalist' ); ?>"><?php _e( 'Skip to content', 'SFHerbalist' ); ?></a></div>
 
+				<img src="http://sfherbalist.com/wp_redesign_brendajin/wordpress/wp-content/uploads/2013/03/SFHerbalistlogo.png" style="width: 200px;padding: 0 10px;float:left;">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav>
 			</div><!-- .site-header -->
