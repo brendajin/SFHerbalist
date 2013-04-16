@@ -29,11 +29,13 @@ jQuery( document ).ready( function( $ ) {
 		timeout = setTimeout( function() {
 			if ( browserWidth < 600 ) {
 				$.fn.smallMenu();
+				document.getElementById('bannerlogo').style.display='none';
 			} else {
+				$('#bannerlogo').show();
 				$masthead.find( '.site-navigation' ).removeClass( 'main-small-navigation' ).addClass( 'main-navigation' );
 				$masthead.find( '.site-navigation h1' ).removeClass( 'menu-toggle' ).addClass( 'assistive-text' );
 				$masthead.find( '.menu' ).removeAttr( 'style' );
-				$('#bannerlogo').show();
+				document.getElementById('bannerlogo').style.display='block';
 			}
 		}, 200 );
 	} );
@@ -48,7 +50,6 @@ jQuery( document ).ready( function( $ ) {
         var scrollTop = $w.scrollTop();
         var shouldBeFixed = scrollTop > navHomeY;
         if (shouldBeFixed && !isFixed) {
-        	$('#bannerlogo').hide();
             nav.css({
                 position: 'fixed',
                 top: 0,

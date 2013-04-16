@@ -12,7 +12,7 @@
 	</div><!-- #main -->
 
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer c-footer" role="contentinfo">
 		<div class="site-info">
 			<?php do_action( 'SFHerbalist_credits' ); ?>
 			&copy; <?php echo date("Y"); ?> <?php bloginfo( 'name' ); ?>

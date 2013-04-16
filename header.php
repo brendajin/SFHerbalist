@@ -63,11 +63,23 @@
 				<h1 class="assistive-text"><?php _e( 'Menu', 'SFHerbalist' ); ?></h1>
 				<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'SFHerbalist' ); ?>"><?php _e( 'Skip to content', 'SFHerbalist' ); ?></a></div>
 
-				<img src="http://sfherbalist.com/wp_redesign_brendajin/wordpress/wp-content/uploads/2013/03/SFHerbalistlogo.png" style="width: 200px;padding: 0 10px;float:left;">
+				<img id="bannerlogo" src="http://sfherbalist.com/wp_redesign_brendajin/wordpress/wp-content/uploads/2013/03/SFHerbalistlogo.png" style="width: 200px;padding: 0 10px;float:left;">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav>
+</nav>
+
 			</div><!-- .site-header -->
-		
+
 		</header><!-- #masthead .site-header -->
+		<div id="colophon" class="c-header" style="background-image: url(http://sfherbalist.com/wp_redesign_brendajin/wordpress/wp-content/uploads/2013/04/banner.jpg);">
+			<?php 
+			if( is_home() ) { 
+				?>
+				Articles
+				<?php								
+			 }
+			else {
+				the_title();
+			} ?>
+		</div>
 	</div><!-- added navigation -->
 	<div id="main">
